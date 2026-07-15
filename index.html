@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🎓 Student Management System</h1>
+
+        <!-- Student Registration -->
+
+        <div class="card">
+
+            <h2>Student Registration</h2>
+
+            <input type="text" id="sid" placeholder="Student ID">
+
+            <input type="text" id="sname" placeholder="Student Name">
+
+            <input type="email" id="email" placeholder="Email">
+
+            <input type="number" id="credits" placeholder="Maximum Credits">
+
+            <button onclick="registerStudent()">
+                Register Student
+            </button>
+
+        </div>
+
+        <!-- Course Management -->
+
+        <div class="card">
+
+            <h2>Course Management</h2>
+
+            <input type="text" id="ccode" placeholder="Course Code">
+
+            <input type="text" id="ctitle" placeholder="Course Title">
+
+            <input type="number" id="ccredit" placeholder="Credits">
+
+            <input type="text" id="teacher" placeholder="Instructor">
+
+            <button onclick="addCourse()">
+                Add Course
+            </button>
+
+        </div>
+
+        <!-- Course Registration -->
+
+        <div class="card">
+
+            <h2>Course Registration</h2>
+
+            <input type="text" id="studentid" placeholder="Student ID">
+
+            <input type="text" id="courseid" placeholder="Course Code">
+
+            <button onclick="registerCourse()">
+                Register Course
+            </button>
+
+        </div>
+
+        <!-- Students -->
+
+        <div class="card">
+
+            <h2>Students</h2>
+
+            <table id="studentTable">
+
+                <tr>
+
+                    <th>ID</th>
+
+                    <th>Name</th>
+
+                    <th>Email</th>
+
+                    <th>Credits</th>
+
+                </tr>
+
+            </table>
+
+        </div>
+
+        <!-- Courses -->
+
+        <div class="card">
+
+            <h2>Courses</h2>
+
+            <table id="courseTable">
+
+                <tr>
+
+                    <th>Code</th>
+
+                    <th>Title</th>
+
+                    <th>Credits</th>
+
+                    <th>Instructor</th>
+
+                </tr>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
